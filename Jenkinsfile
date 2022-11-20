@@ -91,7 +91,7 @@ pipeline {
             }
         }
 
-        stage('REMOVE UNUSED IMAGE') {
+        stage('REMOVE UNUSED IMAGE FROM JENKINS SERVER') {
             steps {
                 sh "docker rmi $registry:V$BUILD_NUMBER"
             }
